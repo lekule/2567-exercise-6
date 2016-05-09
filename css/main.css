@@ -27,7 +27,6 @@
 	5.4 - Alignments
 --------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
@@ -36,109 +35,112 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: white;
 }
 /*--------------------------------------------------------------
 1.1 - BODY
 -------------------------------------------------------------- */
-.lead {
-	font-weight: 500;
-	font-size: 1.2rem;
-}
 
-.lead span {
-	color:#77cae6;
+#services .col-9-12 p:nth-of-type(1) {
+	text-transform: uppercase;
+	font: 500 1.2rem;
+	
+}
+span {
+	color: #77cae6;
 	font-weight: 800;
 }
 
+#contact .col-1-2 p {
+	margin: 0 50px 0;
+}
 /*--------------------------------------------------------------
 1.2 - HEADINGS
 -------------------------------------------------------------- */
 h1 {
-    font-size: 5.5rem;
-    background-color: rgba(255,255,255,.5);
-    line-height: 5rem;
-    text-align: center;
-    padding: 20px;
+	font-size: 5.5rem;
+	line-height: 5rem;
+	text-transform: uppercase;
+	padding: 20px;
+}
+nav a:hover, h1 {
+	background-color: rgba(255,255,255,.5);
 }
 
 h2 {
 	font-size: 3rem;
 	font-weight: 100;
 }
-
 h3 {
-	font-weight: 300;
-	font-size: 2rem;
+	font: 300, 2rem;
 }
 h4 {
 	margin-bottom: 0;
 }
-
 /*--------------------------------------------------------------
 1.4 - FORMS
 -------------------------------------------------------------- */
 form {
-	padding-left:20px;
+	padding-left: 20px;
 }
-form div {
+form div, input, textarea {
 	padding: 10px;
 }
 form .col-1 {
 	padding-right: 2rem !important;
 }
+/*--------------------------------------------------------------
+
+An important declaration provides a way for a stylesheet author to give a CSS value more weight than it naturally has. It should be noted here that the phrase “important declaration” is a reference to an entire CSS declaration, including property and value, with !important added (thanks to Brad Czerniak for pointing out this discrepancy).
+
+-------------------------------------------------------------- */
+
 label {
-	display:none;
+	display: none;
 }
 input, textarea {
 	background-color: #19896e;
 	width: 100%;
-	padding: 10px;
-	border:1px solid #19896e;
+	border: 1px solid #19896e;
 }
 input:focus, textarea:focus {
-	outline:none;
-	border:1px solid #115e4b;
+	outline: none;
+	border: 1px solid #115e4b;
 }
 ::-webkit-input-placeholder {
-   color: white;
+ color: white;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: white;  
+ color: white;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: white;  
+ color: white;
 }
 
-:-ms-input-placeholder {  
-   color: white;  
+:-ms-input-placeholder {
+ color: white;
 }
 form a {
 	margin-top: 20px;
-	padding:10px 20px;
+	padding: 10px 20px;
 	background-color: #146c57;
-	text-transform: uppercase;
-	color: white;
 	text-decoration: none;
-	display:inline-block;
+	display: inline-block;
 	font-weight: 600;
 }
-
 form a:hover {
 	color: #146c57;
 	background-color: white;
-	
 }
 /*--------------------------------------------------------------
 1.5 - LISTS
 -------------------------------------------------------------- */
 dt, dd {
-	display: inline-block
+	display: inline-block;
 }
 dt {
-	font-weight:100;
+	font-weight: 100;
 	width: 20px;
 }
 dd {
@@ -151,26 +153,15 @@ dd {
 nav {
 	text-align: right;
 }
-
-nav li  {
-	display:inline-block;
-	list-style: none;
+nav li {
+	display: inline-block;
 	padding: 0 20px;
-    font-weight: 700;
+	font-weight: 700;
 }
-
 nav a {
-	color: white;
 	text-decoration: none;
-	padding:10px;
+	padding: 10px;
 }
-
-nav a:hover {
-	background-color: rgba(255,255,255,.5);
-}
-
-
-
 /*--------------------------------------------------------------
 3.0 - SITE STRUCTURE
 -------------------------------------------------------------- */
@@ -179,89 +170,71 @@ nav a:hover {
 	-moz-box-sizing: border;
 	box-sizing: border-box;
 }
-
 .wrapper {
 	width: 80%; /*original width was 1170px*/
 	margin: 0 auto;
 }
-
 .row:after {
 	content: " ";
 	display: table;
 	clear: both;
 }
-
 img {
 	max-width: 100%;
 }
-
 figure {
 	-webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
 	margin-right: 20px;
 }
-
 [class*="col-"] {
 	float: left;
 	padding: 0 2rem 2rem 0;
 }
-
 [class*="col-"]:last-of-type {
 	float: left;
 	padding-right: 0;
 }
-
 /*--------------------------------------------------------------
 3.1 - SINGLE COLUMNS
 -------------------------------------------------------------- */
 .col-1 {
 	width: 100%;
 }
-
 .col-1-2 {
 	width: 50%;
 }
-
 .col-1-3 {
 	width: 33.33%;
 	padding: 1rem 0;
 }
-
 .col-1-4 {
 	width: 25%;
 	padding-bottom: 0;
 }
-
 .col-1-5 {
 	width: 20%;
 }
-
 .col-1-6 {
 	width: 16.66%;
 }
-
 .col-1-7 {
 	width: 14.28%
 }
-
 .col-1-8 {
 	width: 12.5%;
 }
-
 .col-1-9 {
 	width: 11.11%;
 }
-
 .col-1-10 {
 	width: 10%;
 }
-
 .col-1-11 {
 	width: 9.09%;
 }
-
 .col-1-12 {
 	width: 8.33%;
 }
@@ -272,72 +245,55 @@ figure {
 .col-2-3 {
 	width: 66.66%;
 }
-
 .col-3-4 {
 	width: 75%;
 }
-
 .col-2-5 {
 	text-align: left;
 	width: 40%;
 }
-
 .col-3-5 {
 	width: 60%;
 }
-
 .col-2-6 {
 	width: 16.66%;
 }
-
 .col-4-6 {
 	width: 83.33%;
 }
-
 .col-3-7 {
 	width: 14.28%;
 }
-
 .col-4-7 {
 	width: 85.7%;
 }
-
 .col-3-8 {
 	width: 37.5%;
 }
-
 .col-5-8 {
 	width: 62.5%;
 }
-
 .col-3-9 {
 	width: 11.11%;
 }
-
 .col-6-9 {
-	width: 88.88%; 
+	width: 88.88%;
 }
-
 .col-4-10 {
 	width: 40%;
 }
-
 .col-6-10 {
 	width: 60%;
 }
-
 .col-9-11 {
 	width: 81.81%;
 }
-
 .col-2-11 {
 	width: 18.18%;
 }
-
 .col-3-12 {
 	width: 8.33%;
 }
-
 .col-9-12 {
 	width: 91.67%;
 }
@@ -347,72 +303,67 @@ figure {
 /*-- Services -- */
 #services section div {
 	background-color: #1c7897;
-	padding:20px 10px;
+	padding: 20px 10px;
 }
-
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
 
-#hero { 
-  background: url(../img/hero.jpeg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+#hero {
+	background: url(../img/hero.jpeg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 20px;
 }
-
 #map {
 	height: 200px;
-	margin-top:100px;
+	margin-top: 100px;
 }
-
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
-
+nav a, form a, body {
+	color: white;
+}
 /*--------------------------------------------------------------
 5.1 - BG COLORS
 -------------------------------------------------------------- */
 #services {
-	background-color:#218FB4;
+	background-color: #218FB4;
+	padding-bottom: 100px;
 }
 #contact {
-	background-color:#21b490;
+	background-color: #21b490;
+	padding: 50px 0 100px 0;  
+
 }
 /*--------------------------------------------------------------
 5.2 - TXT UTILITY
 -------------------------------------------------------------- */
-.txt-uppercase {
-	text-transform:uppercase;
-}
-.txt-center {
+#contact .col-9-12 p:nth-of-type(1), form p, #services {
 	text-align: center;
 }
+#services .col-9-12 p:nth-of-type(1), h3, form a, li{ 
+	text-transform: uppercase;
+}
+h1, h2 { 
+text-align: center;
+text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 5.3 - SPACING
 -------------------------------------------------------------- */
-.p-t-sm {
-	padding-top: 10px;
-}
-.p-t-md {
-	padding-top: 20px;
-}
+
 .p-t-lg {
 	padding-top: 50px;
-}
-.p-b-lg {
-	padding-bottom: 50px;
 }
 .p-b-xl {
 	padding-bottom: 100px;
 }
-.m-t-0 {
-	margin-top: 0;
-}
-.m-b-lg {
-	margin-bottom: 50px;
-}
+
 /*--------------------------------------------------------------
 5.4 - ALIGNMENTS
 -------------------------------------------------------------- */
@@ -421,17 +372,45 @@ figure {
 	margin: 0 auto;
 	float: none !important;
 }
-
 .push-right {
 	float: right !important;
 }
 
+@media screen and (max-width: 480px) {
+nav li {
+	font-size: 0.7rem;
+}
 
+h1 { 
+font-size: 2.5rem;
+line-height: 2.4rem;
+}
 
+h2 { 
+font-size: 2rem;
+}
 
+p, h3 { 
+font-size: 0.7rem;
+}
 
+.col-1-2 { 
+width: 100%;
+padding-bottom: 0;
+}
+.col-1-4 { 
+width: 100%;
+padding-bottom: 20px;
+padding-right: 0;
+}
 
-@media screen and (max-width: 768px) {
-	
-	
+#map { 
+width: 100%;
+margin-top: 0;
+}
+
+.small { 
+width: 100%;
+}
+
 }
